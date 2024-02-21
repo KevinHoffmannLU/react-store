@@ -4,13 +4,13 @@ import './categories-hero.styles.scss';
 
 const CategoriesHero = () => {
     return (
-    <div className="categories-hero-container">
-    {jsonData.map((category) =>
-      (
-        <CategoryItem key={category.id} category={category} />
-      )
-    )}
-  </div>
+        <div className="categories-hero-container">
+            {jsonData.map((category) =>
+                (
+                    <CategoryItem key={category.id} category={category} />
+                )
+            )}
+        </div>
     );
 }
 
