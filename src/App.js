@@ -1,44 +1,10 @@
-import './categories.styles.scss';
+import Categories from './components/categories-hero/categories-hero.component';
 
 const App = () => {
-
-  const categories = [
-    {
-      id: 1,
-      title: "Hats",
-    },
-    {
-      id: 2,
-      title: "Jackets",
-    },
-    {
-      id: 3,
-      title: "Sneakers",
-    },
-    {
-      id: 4,
-      title: "Women's",
-    },
-    {
-      id: 5,
-      title: "Mens",
-    },
-  ];
-
   return (
-  <div className="categories-container">
-    {categories.map(({ title, id }) =>
-      (
-        <div key={id} className="category-container">
-          <div className="background-image" />
-          <div className="category-body-container">
-            <h2>{title}</h2>
-            <p>Shop now</p>
-          </div>
-        </div>
-      )
-    )}
-  </div>
+    <div>
+      <Categories />
+    </div>
   );
 }
 
