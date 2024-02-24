@@ -1,9 +1,13 @@
-import Categories from './components/categories-hero/categories-hero.component';
+import { Routes, Route } from 'react-router-dom';
+
+import Home from './routes/home/home.component';
 
 const App = () => {
   return (
     <div>
-      <Categories />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
